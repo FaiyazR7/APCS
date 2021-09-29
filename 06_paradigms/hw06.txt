@@ -1,0 +1,17 @@
+Faiyaz Rafee
+APCS
+HW06 -- Paradigms/Printing Hello World in different languages
+2021-09-28
+
+Scheme:
+(display "Hello World!")
+
+Netlogo:
+print "Hello World!"
+
+Python:
+print("Hello World!:)
+
+3. All of us used the same code for Python and Scheme.
+
+4. One of our trio members used a different command for Netlogo and I didn't know there were multiple ways to print in Netlogo
