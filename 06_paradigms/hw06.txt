@@ -10,7 +10,7 @@ Netlogo:
 print "Hello World!"
 
 Python:
-print("Hello World!:)
+print("Hello World!")
 
 3. All of us used the same code for Python and Scheme.
 
