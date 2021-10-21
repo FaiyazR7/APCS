@@ -1,10 +1,12 @@
 /*
    "The Cats" : Faiyaz Rafee, Xinqing Lin, Perry "the platypus" Huang
    APCS pd07
-   HW21 --
+   HW21 -- STAtisTically Speaking...
    2021-10-20
    DISCO:
+   You cannot convert double to int without typecasting.
    QCC:
+   How do you do int geoMean without using typcasting?
 */
 
 public class StatsDriver{
