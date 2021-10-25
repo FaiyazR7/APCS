@@ -28,8 +28,8 @@ public class Coin {
 	headsCtr = 0;
 	tailsCtr = 0;
 	upFace = "none";
-	value = 3.7e6;
-	name = "Hawaii Five Star";
+	value = 1;
+	name = "penny";
 	bias = 0.5;
   }
 
@@ -92,7 +92,20 @@ public class Coin {
    * Returns value assigned.
    ***/
   private double assignValue( String s ) {
-  	return 0;
+  	if ( s = "penny"){
+      return 1;
+    }
+    if ( s = "nickel"){
+      return 5;
+    }
+    if ( s = "dime"){
+      return 10;
+    }
+    if ( s = "quarter"){
+      return 25;
+    }
+    else return 100;
+    }
   }
 
 
@@ -102,7 +115,8 @@ public class Coin {
       postcond: Coin's attribs reset to starting vals
   ***/
   public void reset( String s, double d ) {
-
+    name = s;
+    value = d;
   }
 
 
