@@ -41,7 +41,11 @@ public class Driver {
       else {
         System.out.println( "No match. Firestarter you can not be." );
       }
+<<<<<<< HEAD
       //====================BOTTOM======================*/
+=======
+      //====================BOTTOM======================
+>>>>>>> b77a276bd6c6790d7293b7e5907765f8ae70690a
 
   }//end main()
 

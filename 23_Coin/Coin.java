@@ -1,8 +1,17 @@
 /***
- *  class Coin
- *  by Clyde "Thluffy" Sinclair
- *  SKELETON
- ***/
+ Spicy Mangoes: May Qiu, Andrew Piatetsky, Faiyaz Rafee
+ Hw 23 // Randomness and Bias in methods
+ 2021-10-24
+ DISCO
+
+ We learned that putting Coin other into the input creates a new instance of class Coin
+ 
+ QCC
+  
+ Why is it Coin other instead of a datatype other? 
+ We do not know how to generate a random number in our flip function
+ 
+***/
 
 public class Coin {
 
@@ -28,8 +37,8 @@ public class Coin {
 	headsCtr = 0;
 	tailsCtr = 0;
 	upFace = "none";
-	value = 3.7e6;
-	name = "Hawaii Five Star";
+	value = 1;
+	name = "penny";
 	bias = 0.5;
   }
 
@@ -91,8 +100,13 @@ public class Coin {
    * postcond: instvar value gets appropriate value
    * Returns value assigned.
    ***/
+<<<<<<< HEAD
   private double assignValue( String s ) {
     if ( s == "penny"){
+=======
+private double assignValue( String s ) {
+  	if ( s == "penny"){
+>>>>>>> b77a276bd6c6790d7293b7e5907765f8ae70690a
       return 1;
     }
     if ( s == "nickel"){
@@ -105,10 +119,13 @@ public class Coin {
       return 25;
     }
     else {
+<<<<<<< HEAD
        return 100;
+=======
+      return 100;
+>>>>>>> b77a276bd6c6790d7293b7e5907765f8ae70690a
     }
   }
-
 
   /***
       reset() -- initialize a Coin
@@ -119,10 +136,17 @@ public class Coin {
     upFace = s;
     bias = d;
     flipCtr = 0;
+<<<<<<< HEAD
     headsCtr = 0;
     tailsCtr = 0;
     value = 1;
     name = "penny";
+=======
+	  headsCtr = 0;
+	  tailsCtr = 0;
+    value = 1;
+	  name = "penny";
+>>>>>>> b77a276bd6c6790d7293b7e5907765f8ae70690a
   }
 
 
@@ -135,10 +159,32 @@ public class Coin {
    * Either headsCtr or tailsCtr incremented by 1, as approp.
    * Returns "heads" or "tails"
    ***/
+    
   public String flip() {
-  	return "";
-
+    double num;
+    num = math.random(0.0 , 1.0)
+    if (num <= bias){
+      upFace = "heads";
+    }
+    else {
+      upFace = "tails";
+    } 
+  	if (bias == 1.0){
+      upface = "heads";
+    }
+    if (bias == 0.0){
+      upface = "tails";
+    }
+    if (upFace == "heads") {
+      headsCtr =+ 1;
+    }
+    else {
+      tailsCtr =+ 1;
+    }
+    flipCtr =+ 1;
+    return upFace;
   }
+
 
 
   /***
@@ -147,8 +193,12 @@ public class Coin {
    * postcond: Returns true if both coins showing heads
    * or both showing tails. False otherwise.
    ***/
+<<<<<<< HEAD
   public boolean equals( Coin other ) {
   
+=======
+  public boolean equals( Coin other ) { 
+>>>>>>> b77a276bd6c6790d7293b7e5907765f8ae70690a
    if (upFace == other.upFace) {
       return true;
     
@@ -167,7 +217,5 @@ public class Coin {
   public String toString() {
   	return upFace + " " name;
   }
-
-
 }//end class
 
