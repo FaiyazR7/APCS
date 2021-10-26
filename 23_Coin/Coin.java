@@ -92,7 +92,21 @@ public class Coin {
    * Returns value assigned.
    ***/
   private double assignValue( String s ) {
-  	return 0;
+    if ( s == "penny"){
+      return 1;
+    }
+    if ( s == "nickel"){
+      return 5;
+    }
+    if ( s == "dime"){
+      return 10;
+    }
+    if ( s == "quarter"){
+      return 25;
+    }
+    else {
+       return 100;
+    }
   }
 
 
@@ -102,7 +116,13 @@ public class Coin {
       postcond: Coin's attribs reset to starting vals
   ***/
   public void reset( String s, double d ) {
-
+    upFace = s;
+    bias = d;
+    flipCtr = 0;
+    headsCtr = 0;
+    tailsCtr = 0;
+    value = 1;
+    name = "penny";
   }
 
 
@@ -128,7 +148,14 @@ public class Coin {
    * or both showing tails. False otherwise.
    ***/
   public boolean equals( Coin other ) {
-  	return true;
+  
+   if (upFace == other.upFace) {
+      return true;
+    
+    }
+    else {
+      return false;
+    }
   }
 
 
@@ -138,8 +165,9 @@ public class Coin {
    * postcond: Return String comprised of name and current face
    ***/
   public String toString() {
-  	return "";
+  	return upFace + " " name;
   }
 
 
 }//end class
+
