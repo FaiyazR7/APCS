@@ -3,23 +3,38 @@ THE CATS: Perry Huang, Faiyaz Rafee, Xinqing Lin
 APCS
 HW26 -- Recursive vs Iterative vs Brute force/3 ways of figuring out GCD/summary
 2021-10-27
-time spent: started 9:22 ended ____
+time spent: 1.2 hours
 DISCO:
+We discovered that the brute forcing method requires more thinking than non-brute forcing methods.
 
 QCC:
+Why do we need to return recursive calls?
+How do you use a brute force method?
 
+ALGO: 
+If a does not equal b, find the greatest input. Change the value of the greater input 
+by subtracting the smaller input from it. Repeat process until a equals b. Then return a or b (doesn't matter)
 */
 public class Stats {
-
+  
   public static int gcd( int a, int b) {
-    int i = 0;
-  	while (i % a != 0 && i % b != 0){
-      i = i + 1;
-    
+    int i;
+    while (a != b) {
+      if (a > b) {
+        i = a;
+        
+      }
+      else {
+        i = b;
+      }
+      i
     }
+    return i;
   }
- 
- public static int gcdER( int a, int b) {
+  
+//spent too much time; can't spend more because of other homework
+  
+  public static int gcdER( int a, int b) {
     if (a == b) {
       return a;
     }
@@ -29,7 +44,9 @@ public class Stats {
     else {
       return gcdER(a, b-a);
     }
-  } 
+  }
+  
+  
   public static int gcdEW( int a, int b) {
     while (a != b){
       if (a > b) {
