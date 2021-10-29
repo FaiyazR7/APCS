@@ -19,12 +19,13 @@ public class Rof {
 
   public static String reverseR(String s){
     String a = "";
-    int length = s.length() - 1;
+    int length = s.length();
     if(s.length()==1){
       a += s;
+      return a;
     }
-    a += s.substring(length );
-    return a + reverseR(s.substring(0, length - 1);
+    a += s.substring(length - 1);
+    return a + reverseR(s.substring(0, length - 1));
   }
 
   public static void main( String [] args) {
