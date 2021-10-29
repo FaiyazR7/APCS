@@ -1,3 +1,15 @@
+/*
+RAINBOW DRAGON: Yat Long Chan, Lawrence Joa, Faiyaz Rafee
+APCS 
+HW 27 -- FOR the Love of Strings // Recursive and for loop for reversing and fence methods
+2021-10-28
+time spent: 0.5 hours
+DISCO
+You have to be careful about where you are changing the counter values.
+QCC
+Are there situations where we must use forloop instead of recursion or vice versa?
+*/
+
 public class Rof {
   public static String fenceF(int posts){
     String fence = "|";
@@ -34,4 +46,3 @@ public class Rof {
 		System.out.println(reverseR("stressed"));
   }
 }
-
