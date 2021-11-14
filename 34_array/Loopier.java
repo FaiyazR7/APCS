@@ -1,6 +1,6 @@
 import java.lang.Object;
 public class Loopier {
-	public static void populateArray(int[] x,int num) {
+	public static void populateArray(int[] x) {
 		x = new int[num];
 		for (int i = 0; i < num; i ++) {
 			int e =(int)(Math.random()* 100);
@@ -10,16 +10,16 @@ public class Loopier {
 
 	public static String arrayToString(int[] x) {
 		String t = "{";
-		for (int i = 0; i < getLength(x);i ++) {
-			t += x[i].toString();
+		for (int i = 0; i < x.length;i ++) {
+			t += x[i];
 			t += ", ";
 		}
 		t+="}";
 		return t;
 	}
 	public static void main(String[] args) {
-		int[] r;
-		populateArray(r,5);
+		int[] r = new int[5];
+		populateArray(r);
 		System.out.println(arrayToString(r));
 	}
 
