@@ -1,4 +1,4 @@
-// Max Schneider
+// Blue Steaks: Max Schneider, Faiyaz Rafee, David Deng
 // APCS pd7
 // HW43 -- encapsulation (basic SuperArray functionality)
 // 2021-12-06
