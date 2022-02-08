@@ -1,0 +1,20 @@
+Faiyaz Rafee
+APCS
+Hw 60 - notes on class demonstration
+2022-2-8
+Time spent: .2 hrs
+
+DISCO:
+Processors must not actively sort cards, just carry out give or recieve as straying from task would result in the entire system breaking down. 
+
+QCC:
+Can a thinkeren receive multiple decks if he gives away orginial deck given to him for sorting?
+
+THINKER FIRMWARE:
+-if given cards, take cards
+-if card # > 1, split your cards and give each half to other thinkeren
+-if card # = 1, give it back to the thinkeren who gave it to you
+-if you have 2 decks, combine decks into one and return to thinkeren who gave it to you. 
+
+HOW TO CLEAN UP:
+-standardize a way to give cards so it requires minimum time to give away decks to others. 
