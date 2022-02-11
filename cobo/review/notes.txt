@@ -1,0 +1,88 @@
+==========
+ACTIVITY 1
+==========
+
+1a. public static sentimentVal( String )
+1b. This method requires a String parameter. If you pass a different parameter, it will return 0.
+1c. This method returns a double.
+
+2.
+Method Call                 Return value
+
+hands                       0.69
+handsome                    2.12
+handy                       2.28
+
+3a. It will compile.
+3b. It will not compile because sentimentVal does take floats as parameters and it doesn't return a string.
+3c. It will not compile because sentimentVal cannot take 2 parameters.
+
+==========
+ACTIVITY 2
+==========
+
+1. created method totalSentiment
+2. Tested SimpleReview.txt file with content:
+
+"This was a terrible restaurant! The pizza crust was too chewy,
+and I disliked the pasta. I would definitely not come back."
+
+and got -2.92
+
+3. Made starRating and tested with:
+
+"This was a terrible restaurant! The pizza crust was too chewy,
+and I disliked the pasta. I would definitely not come back."
+
+and got 2
+
+4. totalSentiment works by starting at index 0 of the string returned by
+textToString() and then iterating through until a space is found, when a space is found,
+you create an int variable temp and store the current value of index. Then you keep on iterating
+until you find another space. Then the code will remove the puncuation of
+content.substring(temp, index) and find the sentimentValue of that word and add it to
+the double totalSentiment. It will keep on iterating until index is no longer less than
+content.size()
+
+5a. I think that they make sense
+5b. take into account punctuation like exclamantion points, and sometimes positive words dont
+mean positive rating, for e.g "this restaurant is not the best"
+
+6. He did not take into account for a negative sentimentVal.
+
+==========
+ACTIVITY 3
+==========
+
+3. indexOf is a method in the String class that finds the index of the first instance of the string input.
+substring is a method in the String class that can take one or two integer parameters. If it is given one integer parameter,
+it will return a substring starting from index of that parameter to the end of the string. If given two integer parameters,
+it will return a substring starting from index of the initial parameter to one less of the index of the other parameter. This
+is exactly why it is necessary to add 1 to the position of the space when copying the remained of the string.
+
+5. Static methods belongs to a class and can be used in any instance of a class, while a non-static method can access any
+static methods/variables without needing an instance of the class.
+
+6. We could just replace the randomAdjective call with randomNegativeAdj or randomPositiveAdj.
+
+==========
+ACTIVITY 4
+==========
+
+1. You would want to auto generate negative reviews when you want to make a tom foolery of other businesses.
+
+2. You would want to auto generate positive reviews when you are trying to boost ratings of a product.
+
+3. We decided to have a more positive review. To do this, we would replace all neutral and negative adjectives with positive adjectives.
+This will result in an overall stronger positive review.
+
+5. oneWord will be replaced by a substring that starts at index 1 inclusive and ends at the end of oneWord.
+
+6. In the actual list, there are no words with the * character in front of it.
+
+7. To create a super positive review, you can just replace the neutral / negative adjectives with adjectives with a sentimentVal of
+greater than 1 or some other arbitrary number.
+
+==========
+ACTIVITY 5
+==========
