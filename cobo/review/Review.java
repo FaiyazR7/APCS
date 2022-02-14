@@ -1,3 +1,10 @@
+/*
+Flying sullen Actors: Alif Rahman, Faiyaz Rafee, Salaj Rijal
+APCS
+LAB 6 -- Read/Review/Expand -- Cobo Consumer Review Lab
+2022-2-14
+time spent: 4 hours
+*/
 import java.util.Scanner;
 import java.io.*;
 import java.util.HashMap;
@@ -36,7 +43,7 @@ public class Review {
       Scanner input = new Scanner(new File("positiveAdjectives.txt"));
       while(input.hasNextLine()){
         String temp = input.nextLine().trim();
-        System.out.println(temp);
+        // /System.out.println(temp);
         posAdjectives.add(temp);
       }
       input.close();
@@ -217,7 +224,6 @@ public static String replaceAdjective(String fileName) {
   partTwo = partTwo.substring(indexSpace);
   return partOne + randomAdjective() + partTwo;
 }
-
 public static String fakeReview(String fileName) {
   while (fileName.indexOf("*") > -1) {
     fileName = replaceAdjective(fileName);
@@ -226,6 +232,7 @@ public static String fakeReview(String fileName) {
 }
 */
 
+//For Activity 4:
 public static String replaceAdjective(String fileName) {
   // helper functino for fakeReview
   int indexAst = fileName.indexOf("*");
