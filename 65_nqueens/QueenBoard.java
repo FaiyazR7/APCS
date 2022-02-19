@@ -155,7 +155,7 @@ public class QueenBoard {
 
   // main method for testing...
   public static void main(String[] args) {
-    QueenBoard b = new QueenBoard(8);
+    QueenBoard b = new QueenBoard(12);
     System.out.println(b);
 
     b.solve();
