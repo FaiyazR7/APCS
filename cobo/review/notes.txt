@@ -1,3 +1,9 @@
+Flying sullen Actors: Alif Rahman, Faiyaz Rafee, Salaj Rijal
+APCS
+LAB 6 -- Read/Review/Expand -- Cobo Consumer Review Lab
+2022-2-14
+time spent: 4 hours
+
 ==========
 ACTIVITY 1
 ==========
@@ -86,3 +92,38 @@ greater than 1 or some other arbitrary number.
 ==========
 ACTIVITY 5
 ==========
+
+1. We chose to implement this program because it was related to the program we made in this lab before. Our program checks to see if
+a string conveys the feeling of excitement in it by checking if it contains the "!".
+
+2. We made a program that fufilled the requirements set by the instructions and just made a program inspired by this lab.
+
+3. public static boolean isExcited(String). I chose to make the method this way because it's purpose is to see if a string conveys
+excitement by lookign for "!". It also has no reason to be non-static so I made it static.
+
+4. input.length(). This call returns the length of the String input. input.substring(i,i+1). This call returns the substring of input
+at the index of i. 
+
+5.     if (letter.equals("!")) {
+         // checks to see if there is a "!" --> conveys excitement
+         if (input.indexOf("?") < 1) {
+             // checks to see if there is no "?" --> "?" with "!" doesn't really convey excitement, it's more like nervousness.
+             excite = true;
+         }
+
+This code uses a nested conditional checking if two states of the input are true. If so, the boolean variable excite changes.
+This code could be written with an and statement inside the if conditional instead.
+
+6. for (int i = 0; i < input.length(); i++) {
+     // iterates through String Input
+     letter = input.substring(i, i+1);
+     // sets letter as the current index i of Input
+     if (letter.equals("!")) {
+         // checks to see if there is a "!" --> conveys excitement
+         if (input.indexOf("?") < 1) {
+             // checks to see if there is no "?" --> "?" with "!" doesn't really convey excitement, it's more like nervousness.
+             excite = true;
+         }
+
+This code uses a for loop, seeing if any iteration of the for loop will change the boolean excite.
+This code could be written with a while loop instead of a for loop.
