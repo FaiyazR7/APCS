@@ -1,8 +1,13 @@
+// Team Acid: Yuki Feng, Tasnim Chowdhury, Faiyaz Rafee
+// APCS pd08
+// HW90: Deque the Halls
+// 2022-04-13
+// time spent: 0.5 hrs
+
 import java.util.LinkedList;
 
-public class LLDeque<QUASAR> implements Deque<QUASAR> {
-  private LinkedList<QUASAR> list = new LinkedList<QUASAR>();
-
+public class AcidicDeque<QUASAR> implements Deque<QUASAR> {
+  private LinkedList<QUASAR> list;
 
   public void addLast(QUASAR x)
   {
@@ -34,6 +39,35 @@ public class LLDeque<QUASAR> implements Deque<QUASAR> {
     return list.peekLast();
   }
 
+  public boolean offerLast(QUASAR x)
+  {
+    return list.offer(x);
+  }
+
+  public boolean offerFirst(QUASAR x)
+  {
+    return list.offerFirst(x);
+  }
+
+  public QUASAR getFirst()
+  {
+    return list.element();
+  }
+
+  public QUASAR getLast()
+  {
+    return list.getLast();
+  }
+
+  public QUASAR pollFirst()
+  {
+    return list.poll();
+  }
+
+  public QUASAR pollLast()
+  {
+    return list.pollLast();
+  }
 
     //Stringification
     public String toString() {
@@ -46,17 +80,6 @@ public class LLDeque<QUASAR> implements Deque<QUASAR> {
       }
       foo += "]";
       return foo;
-    }
-
-    public static void main(String[] args) {
-      LLDeque LL = new LLDeque();
-      LL.addFirst(1);
-      LL.addFirst(2);
-      LL.addFirst(3);
-      System.out.println("filled LL: " + LL);
-      LL.removeLast();
-      System.out.println("removed head: " + LL);
-      System.out.println("Peekin at new head: " + LL.peekFirst());
     }
 
 }//end class
